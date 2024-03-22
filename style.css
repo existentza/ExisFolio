@@ -1,0 +1,200 @@
+*{
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-180deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.navbar {
+    background-color: #1d1c1c;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+a.logos{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+a.link:hover{
+    color: rgb(14, 172, 211);
+}
+
+
+.about-section,
+.works-section,
+.skills-section,
+.hire-section {
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.vid {
+    border: 2px solid beige;
+    border-radius: 20px;
+    width: 95%;
+    max-width: 1200px;
+    height: 350px;
+    animation: grow 1s ease;
+}
+
+.skill-card {
+    color: white;
+    width: 200px;
+    height: 150px;
+    background-color: #232121;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    animation: rotateIn 1s ease;
+}
+
+.skill-card h3 {
+    margin-top: 10px;
+}
+
+* {
+    font-family: 'Poppins';
+    color: white;
+    animation: ease-in-out all 2s;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.work-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.work-item {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.work-item h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hire-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hire-card {
+    color: white;
+    width: 200px;
+    height: 150px;
+    background-color: #232121;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hire-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hire-link img {
+    margin-bottom: 5px;
+}
+
+.hire-link:hover {
+    color: rgb(14, 172, 211);
+}
