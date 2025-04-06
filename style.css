@@ -465,47 +465,47 @@ h4 {
 }
 
 @media (max-width: 768px) {
-    /* Move the works type bar to the top */
-    .works {
-        flex-direction: column;
-    }
+/* Move the works type bar to the top */
+.works {
+    flex-direction: column;
+}
 
-    .works-type-bar {
-      display: flex;
-      justify-content: center; /* Center works type bar content horizontally */
-      width: 90%; /* Ensure it takes full width */
-      margin-top: 10px;
-      height: 70px;
-      gap: 10px;
-    }
-  
-    .works-reference-container {
-        width: 90%;
-    }
+.works-type-bar {
+    display: flex;
+    justify-content: center; /* Center works type bar content horizontally */
+    width: 90%; /* Ensure it takes full width */
+    margin-top: 10px;
+    height: 70px;
+    gap: 10px;
+}
 
-    .work-reference {
-        justify-content: center;
-        align-content: center;
-    }
+.works-reference-container {
+    width: 90%;
+}
 
-    iframe {
-        width: 90%;
-        height: 200px;
-    }
+.work-reference {
+    justify-content: center;
+    align-content: center;
+}
 
-    .spacer {
-        display: none;
-    }
-    .work-type {
-        width: 15%;
-    }
-    /* Hide the details tab on smaller screens */
-    .details {
-      display: none;
-    }
-  
-    /* Optional: Adjust the layout for the works references to take the main screen area */
-    .works-references {
-      margin-top: 60px; /* Adjust based on the height of the works type bar */
-    }
-  }
+iframe {
+    width: 90%;
+    height: 200px;
+}
+
+.spacer {
+    display: none;
+}
+.work-type {
+    width: 15%;
+}
+/* Hide the details tab on smaller screens */
+.details {
+    display: none;
+}
+
+/* Optional: Adjust the layout for the works references to take the main screen area */
+.works-references {
+    margin-top: 60px; /* Adjust based on the height of the works type bar */
+}
+}
